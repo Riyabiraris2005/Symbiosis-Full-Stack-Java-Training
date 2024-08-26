@@ -1,0 +1,21 @@
+package demo1;
+import java.util.*;
+public class simpleInterest 
+{
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		        int principal,interest_rate,timePeriod,simpleInterest;
+		        Scanner sc=new Scanner(System.in);
+		        System.out.println("enter the price :");
+		        principal=sc .nextInt();
+		        System.out.println("enter the rate of intrest :");
+		        interest_rate= sc .nextInt();
+		        System.out.println("enter the time period :");
+		        timePeriod= sc .nextInt();
+		        simpleInterest=principal*interest_rate*timePeriod/100;
+		        System.out.println("simple interest="+simpleInterest);
+	}
+
+}
