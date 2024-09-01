@@ -1,0 +1,55 @@
+//swapping
+package demo;
+class SwapValues 
+{
+    int a;
+    int b;
+
+    SwapValues(int a, int b) 
+    {
+        this.a = a;
+        this.b = b;
+    }
+}
+
+public class swapexample
+{
+    public static void main(String[] args) {
+        int a = 5;
+        int b = 10;
+        SwapValues values = new SwapValues(5, 10);
+
+        // Swap by value
+        System.out.println("Before swap by value: a = " + a + ", b = " + b);
+        swapByValue(a, b);
+
+        // Swap by reference (using a custom class)
+        System.out.println("Before swap by reference: a = " + values.a + ", b = " + values.b);
+        swapByReference(values);
+        
+        // Swap without using a third variable
+        System.out.println("Before swap without temp: a = " + a + ", b = " + b);
+        swapWithoutTemp(a, b);
+    }
+
+    public static void swapByValue(int x, int y) {
+        int temp = x;
+        x = y;
+        y = temp;
+        System.out.println("After swap by value: a = " + x + ", b = " + y);
+    }
+
+    public static void swapByReference(SwapValues values) {
+        int temp = values.a;
+        values.a = values.b;
+        values.b = temp;
+        System.out.println("After swap by value: a = " + values.a + ", b = " + values.b);
+    }
+
+    public static void swapWithoutTemp(int x, int y) {
+        x = x + y; 
+        y = x - y;
+        x = x - y; 
+        System.out.println("After swap by value: a = " + x + ", b = " + y);
+    }
+}
