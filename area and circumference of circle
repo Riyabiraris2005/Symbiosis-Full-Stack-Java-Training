@@ -1,0 +1,20 @@
+//area and circumference of circle
+package demo;
+import java.util.*;
+
+public class area_of_circle {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		final float pi=(float)3.14;
+		float radius;
+		System.out.println("Enter the radius");
+		radius=sc.nextFloat();
+		float area=pi*radius*radius;
+		float circumference=2*pi*radius;
+		System.out.println("Area if circle is:"+area);
+		System.out.println("circumference of circle is:"+circumference);
+	}
+
+}
