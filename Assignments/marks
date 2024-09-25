@@ -1,0 +1,16 @@
+private int marks;
+	private String div,name;
+	public student() {
+		System.out.println("default constructor");
+		this. marks=11;
+		this.div="class a";	
+	}
+	public student(int a,String d) {
+	this.div=d;this.marks=a;}
+	public int getMarks(){return marks;}
+	public void setName(String name) {this.name=name;}
+	public String getdiv() {return this.div;}
+	public void setdiv(String dept) {this.div=div;}
+	public String toString(){
+		return "Division:"+this.div+"Marks:"+this.marks;
+	}}
