@@ -1,0 +1,18 @@
+package hierarchicalinheritance;
+public class Employee {
+private int empId;
+private String dept;
+public Employee() {
+	System.out.println("default constructor");
+	this.empId=99;
+	this.dept="IT";	
+}
+public Employee(int a,String d) {
+this.empId=a;this.dept=d;}
+public int getempId(){ return empId;}
+public void setName(int id) {this.empId=id;}
+public String getdept() {return this.dept;}
+public void setdept(String dept) {this.dept=dept;}
+public String toString(){
+	return "Department:"+this.dept+"EmppId:"+this.empId;
+}}
